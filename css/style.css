@@ -317,6 +317,9 @@ header .menu i.activ {
     .about .text .som div {
         width: 110px;
     }
+    .btn{
+    font-size:12px;
+    }
 
     .about .text .som div h2 {
         font-size: 14px;
