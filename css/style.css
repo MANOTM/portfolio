@@ -437,13 +437,20 @@ header .menu i.activ {
     border-radius: 15px;
 }
 
-.works .project.activ {
-    transform: scale(0)
+.works .project.hide{
+    display: none;
 }
 
-.works .project.hide {
-    width: 0;
-    height: 0;
+.works .project.show{
+ animation: anime .3s ease-out;
+}
+@keyframes anime{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 290px;
+    }
 }
 
 .works .flex {
