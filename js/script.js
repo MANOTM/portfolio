@@ -40,62 +40,27 @@ theme.onclick = () => {
   }
 };
 
-/*========= Remove Class from btn  ========*/
-function removeClass(Selector) {
-  var elements = document.querySelectorAll(Selector);
-  elements.forEach((element) => {
-    element.classList.remove("activ");
-  });
-}
+// /*========= Show & Hide Project ========*/
+const buttons = document.querySelector('.links'),
+  projects = document.querySelectorAll(".project")
+buttons.addEventListener('click', eo => {
+  if (eo.target.hasAttribute("id")) {
+    buttons.querySelector('.activ').classList.remove('activ')
+    eo.target.classList.add('activ')
+    let butFil = eo.target.dataset.filter
+    projects.forEach(project => {
+      let proFil = project.dataset.filter
+      if (proFil == butFil || butFil == 'all') {
+        project.classList.remove('hide')
+        project.classList.add('show')
+      } else {
+        project.classList.remove('show')
+        project.classList.add('hide')
+      }
+    })
+  }
+})
 
-const projects = document.querySelectorAll(".project"),
-  templateBtn = document.getElementById("template"),
-  appBtn = document.getElementById("app"),
-  allBtn = document.getElementById("all");
-
-/*========= Hide App {Works}  ========*/
-templateBtn.onclick = () => {
-  removeClass(".links button");
-  templateBtn.classList.add("activ");
-  projects.forEach((project) => {
-    project.dataset.filter == "app"
-      ? project.classList.add("activ")
-      : project.classList.remove("activ");
-  });
-  setTimeout(() => {
-    projects.forEach((pr) => {
-      pr.dataset.filter == "app"
-        ? pr.classList.add("hide")
-        : pr.classList.remove("hide");
-    });
-  }, 500);
-};
-
-/*========= Hide Tempalte {Works}  ========*/
-appBtn.onclick = () => {
-  removeClass(".links button");
-  appBtn.classList.add("activ");
-  projects.forEach((project) => {
-    project.dataset.filter != "app"
-      ? project.classList.add("activ")
-      : project.classList.remove("activ");
-  });
-  var l = setTimeout(() => {
-    projects.forEach((pr) => {
-      pr.dataset.filter != "app"
-        ? pr.classList.add("hide")
-        : pr.classList.remove("hide");
-    });
-  }, 500);
-};
-/*========= Show All Works  ========*/
-allBtn.onclick = () => {
-  removeClass(".links button");
-  allBtn.classList.add("activ");
-  projects.forEach((pr) => {
-    pr.classList.remove("activ", "hide");
-  });
-};
 /*========= Animation Inputs ========*/
 const ContactInput = document.querySelectorAll(".inTex");
 ContactInput.forEach((input) => {
