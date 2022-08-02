@@ -28,17 +28,29 @@ window.addEventListener("scroll", () => {
 
 /*========= Dark Mood ========*/
 const theme = document.querySelector("header .position a+i");
+if (localStorage.getItem("darkMode") == "light") {
+  theme.removeAttribute("class");
+  theme.setAttribute("class", "fa-solid fa-circle-half-stroke");
+  document.body.classList.add("light");
+} else {
+  theme.removeAttribute("class");
+  theme.setAttribute("class", "fa-regular fa-moon");
+  document.body.classList.remove("light");
+}
 theme.onclick = () => {
   if (theme.classList.contains("fa-moon")) {
+    localStorage.setItem("darkMode", "light");
     theme.removeAttribute("class");
     theme.setAttribute("class", "fa-solid fa-circle-half-stroke");
     document.body.classList.add("light");
   } else {
+    localStorage.darkMode = "dark";
     theme.removeAttribute("class");
     theme.setAttribute("class", "fa-regular fa-moon");
     document.body.classList.remove("light");
   }
 };
+
 
 // /*========= Show & Hide Project ========*/
 const buttons = document.querySelector('.links'),
