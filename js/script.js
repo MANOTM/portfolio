@@ -70,5 +70,6 @@ ContactInput.forEach((input) => {
   };
   input.onblur = () => {
     input.classList.remove("activ");
+    !input.value?input.parentElement.firstElementChild.classList.remove("activ"):'';
   };
 });
