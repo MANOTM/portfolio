@@ -316,6 +316,7 @@ header .menu i.activ {
 @media (max-width:579px) {
     .about .text .som div {
         width: calc(100vw/3.2);
+        height: 100px;
     }
     .btn{
     font-size:12px;
