@@ -315,14 +315,14 @@ header .menu i.activ {
 
 @media (max-width:579px) {
     .about .text .som div {
-        width: 110px;
+        width: calc(100vw/3.2);
     }
     .btn{
     font-size:12px;
     }
 
     .about .text .som div h2 {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .about .text p {
@@ -334,6 +334,13 @@ header .menu i.activ {
     .about a {
         margin-left: 20px;
     }
+    .about .text .som div small {
+    position: relative;
+    bottom: 11px;
+    }
+    .about .text .som {
+    gap: 10px;
+    }
 }
 
 @media (max-width:406px) {
@@ -341,6 +348,7 @@ header .menu i.activ {
         width: 90%;
         margin: 0 auto;
     }
+    
 }
 
 /*========== Section Experience Start =========*/
