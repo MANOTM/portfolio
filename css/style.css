@@ -267,6 +267,7 @@ header .menu i.activ {
 
 .about .flex img {
     height: 271px;
+    width: 302px;
     border-radius: 15px;
     background-color: var(--main-color);
 }
