@@ -18,6 +18,10 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     transition: .2s;
+        -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
 }
 
 ::-webkit-scrollbar {
@@ -37,6 +41,10 @@ body {
     overflow-x: hidden;
     background-color: var(--second-color);
     transition: .2s;
+        -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
 }
 
 /*========== Dark Mood =========*/
@@ -127,6 +135,10 @@ header .menu {
     padding: 16px 26px;
     border-radius: 40px;
     z-index: 2;
+        -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
 }
 
 header .menu i {
@@ -134,6 +146,10 @@ header .menu i {
     padding: 10px;
     border-radius: 50%;
     font-size: 17px;
+        -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 header .menu i.activ {
@@ -179,6 +195,10 @@ header .menu i.activ {
     background-color: var(--bgC);
     padding: 5px 7px;
     border-radius: 4px;
+        -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
 }
 
 .home .socail a i:hover,
@@ -220,6 +240,10 @@ header .menu i.activ {
     background: var(--main-color);
     color: black;
     cursor: pointer;
+        -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .btn:hover {
@@ -228,6 +252,10 @@ header .menu i.activ {
 
 .btn:active {
     transform: scale(.95);
+        -webkit-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -ms-transform: scale(.95);
+    -o-transform: scale(.95);
 }
 
 .home button.cv i {
@@ -235,7 +263,11 @@ header .menu i.activ {
 }
 
 .home button.cv:hover i {
-    transform: translateY(4px)
+    transform: translateY(4px);
+        -webkit-transform: translateY(4px);
+    -moz-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    -o-transform: translateY(4px);
 }
 
 .about {
@@ -270,6 +302,10 @@ header .menu i.activ {
     width: 302px;
     border-radius: 15px;
     background-color: var(--main-color);
+ -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;   
 }
 
 .about .text .som {
@@ -288,6 +324,10 @@ header .menu i.activ {
     padding: 15px 0;
     border-radius: 10px;
     gap: 4px;
+   -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .about .text .som div i {
@@ -391,6 +431,10 @@ header .menu i.activ {
     background-color: var(--bgC);
     padding: 20px;
     border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    -ms-border-radius: 17px;
+    -o-border-radius: 17px;
 }
 
 .experience table {
@@ -437,6 +481,10 @@ header .menu i.activ {
     color: black;
     padding: 3px 10px;
     border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
 }
 
 .works .project {
@@ -445,6 +493,10 @@ header .menu i.activ {
     height: 290px;
     overflow: hidden;
     border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .works .project.hide{
@@ -452,7 +504,8 @@ header .menu i.activ {
 }
 
 .works .project.show{
- animation: anime .3s ease-out;
+     animation: anime .3s ease-out;
+     -webkit-animation: anime .3s ease-out;
 }
 @keyframes anime{
     0%{
@@ -482,7 +535,11 @@ header .menu i.activ {
 .works .project .img img {
     width: 100%;
     height: 100%;
-    border-radius: 15px
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .project p {
@@ -503,10 +560,18 @@ header .menu i.activ {
 
 .align i {
     transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    -moz-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    -o-transform: translateY(4px);
 }
 
 .align a:hover+i {
     transform: translate(4px, 4px);
+    -webkit-transform: translate(4px, 4px);
+    -moz-transform: translate(4px, 4px);
+    -ms-transform: translate(4px, 4px);
+    -o-transform: translate(4px, 4px);
 }
 
 /*========== Section Works End =========*/
@@ -532,6 +597,10 @@ header .menu i.activ {
     margin-bottom: 15px;
     padding: 14px;
     border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .contact .box i {
@@ -586,6 +655,10 @@ header .menu i.activ {
     height: 50px;
     width: 300px;
     color: var(--text-color);
+     -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .contact .form textarea {
@@ -598,6 +671,10 @@ header .menu i.activ {
     resize: none;
     color: var(--text-color);
     width: 100%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 /*========== Contact Media Quary =========*/
@@ -645,6 +722,10 @@ footer .socials a {
     color: var(--main-color);
     padding: 0px 5px;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 footer .socials a:hover {
