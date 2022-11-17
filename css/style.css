@@ -18,10 +18,12 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     transition: .2s;
-        -webkit-transition: .2s;
+    -webkit-transition: .2s;
     -moz-transition: .2s;
     -ms-transition: .2s;
     -o-transition: .2s;
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
