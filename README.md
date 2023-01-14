@@ -1,1 +1,1 @@
-![alt text](image/README.png)
+![alt text](images/README.png)
