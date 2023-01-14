@@ -1,1 +1,1 @@
-![alt text](images/README.jng)
+![alt text](images/README.jpg)
